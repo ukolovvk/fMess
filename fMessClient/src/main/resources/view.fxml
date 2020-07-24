@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label layoutX="456.0" layoutY="57.0" prefHeight="26.0" prefWidth="89.0" text="xMess" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="1000.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="generalField" layoutX="23.0" layoutY="140.0" prefHeight="550.0" prefWidth="754.0" />
+      <Label layoutX="23.0" layoutY="727.0" text="Your mess:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="sendButton" layoutX="576.0" layoutY="728.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Send" />
+      <Button fx:id="clearButton" layoutX="702.0" layoutY="728.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Clear all" />
+      <TextArea fx:id="allClients" layoutX="818.0" layoutY="140.0" prefHeight="550.0" prefWidth="158.0" />
+      <TextArea fx:id="messField" layoutX="116.0" layoutY="708.0" prefHeight="60.0" prefWidth="419.0" />
+   </children>
+</AnchorPane>
